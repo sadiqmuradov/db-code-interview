@@ -1,0 +1,6 @@
+server:
+  port: 8021
+  servlet:
+    context-path: /db-code-interview
+swagger:
+  host: localhost:8021

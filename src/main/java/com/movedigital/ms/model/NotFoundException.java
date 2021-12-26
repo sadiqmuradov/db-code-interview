@@ -1,4 +1,4 @@
-package model;
+package com.movedigital.ms.model;
 
 /**
  * Exception thrown when a table name / row ID combination does not match an existing row.

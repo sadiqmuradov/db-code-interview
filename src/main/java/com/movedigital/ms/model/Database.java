@@ -1,4 +1,4 @@
-package model;
+package com.movedigital.ms.model;
 
 import java.util.List;
 

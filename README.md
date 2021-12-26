@@ -1,4 +1,4 @@
-Given the `Database` interface below ([see src/main/java/model/Database.java](src/main/java/model/Database.java)):
+Given the `Database` interface below ([see src/main/java/com.movedigital.ms.model/Database.java](src/main/java/com/movedigital/ms/model/Database.java)):
 
 ```java
 public interface Database {
