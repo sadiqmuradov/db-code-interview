@@ -27,7 +27,7 @@ public class DbOpsService {
                     new OperationResponse<>(OK, "successfully processed", id);
         } else {
             operationResponse =
-                    new OperationResponse<>(ERROR, "unsuccessfully processed", id);
+                    new OperationResponse<>(ERROR, "processing failed", id);
         }
         return operationResponse;
     }
