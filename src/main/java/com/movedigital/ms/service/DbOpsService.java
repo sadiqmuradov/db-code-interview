@@ -20,7 +20,6 @@ public class DbOpsService {
     Database database;
 
     public OperationResponse<Integer> insert(InsertRequestDto request) {
-
         OperationResponse<Integer> operationResponse;
         int id = database.insert(request.getTableName(), request.getValues());
         if (id > 0) {
@@ -34,7 +33,6 @@ public class DbOpsService {
     }
 
     public OperationResponse<Void> update(UpdateRequestDto request) {
-
         OperationResponse<Void> operationResponse;
         try {
             database.update(request.getTableName(), request.getRowId(), request.getValues());
@@ -54,7 +52,6 @@ public class DbOpsService {
     }
 
     public OperationResponse<List<String>> select(SelectRequestDto request) {
-
         OperationResponse<List<String>> operationResponse;
         try {
             List<String> values = database.select(request.getTableName(), request.getRowId());
