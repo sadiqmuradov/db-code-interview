@@ -29,7 +29,7 @@ public class DbOpsController {
     @Autowired
     private DbOpsService dbOpsService;
 
-    @ApiOperation("Inserting a new row to a table")
+    @ApiOperation("Inserting new record to table")
     @PostMapping(URL.INSERT)
     public OperationResponse<Integer> insert(@RequestBody @Valid final InsertRequestDto request) {
 
@@ -39,7 +39,7 @@ public class DbOpsController {
         return response;
     }
 
-    @ApiOperation("Updating a row with new values")
+    @ApiOperation("Updating record with new values")
     @PostMapping(URL.UPDATE)
     public OperationResponse<Void> update(@RequestBody @Valid final UpdateRequestDto request) {
 
@@ -49,7 +49,7 @@ public class DbOpsController {
         return response;
     }
 
-    @ApiOperation("Retrieving specified row values")
+    @ApiOperation("Retrieving specified record values")
     @PostMapping(URL.SELECT)
     public OperationResponse<List<String>> select(@RequestBody @Valid final SelectRequestDto request) {
 
